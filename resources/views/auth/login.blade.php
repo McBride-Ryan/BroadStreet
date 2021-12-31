@@ -32,7 +32,12 @@
                     </div>
                     @enderror
                 </div>
-
+                <div class="mb-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="remember" id="remember" class="mr-2">
+                        <label for="remember">Remember me</label>
+                    </div>
+                </div>
                 <button type="submit" class="bg-blue-600 px-4 py-3 w-full rounded font-medium text-white hover:bg-blue-400">Login</button>
             </form>
         </div>

@@ -26,7 +26,7 @@
                     <p class="mb-2">{{$post->body}}</p>
                 </div>
             @endforeach
-                {{ $posts->links() }}
+               <div class="inline flex">{{ $posts->links() }}</div>
             @else
             <p>There is no post</p>
             @endif

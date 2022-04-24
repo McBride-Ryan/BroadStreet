@@ -13,5 +13,21 @@
             </div>
         </div>
     </div>
+    <div class="grid mx-9 my-6">
+        <div class="grid grid-rows-1 grid-flow-col gap-4 justify-center">
+            <div class="bg-red-500">
+                <h2>TITLE OF THE ARTICLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde similique deleniti ratione perspiciatis accusantium nam dicta officiis voluptatibus molestias.</p>
+            </div>
+            <div class="bg-blue-500">
+                <h2>TITLE OF THE ARTICLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde similique deleniti ratione perspiciatis accusantium nam dicta officiis voluptatibus molestias.</p>
+            </div>
+            <div class="bg-gray-500">
+                <h2>TITLE OF THE ARTICLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde similique deleniti ratione perspiciatis accusantium nam dicta officiis voluptatibus molestias.</p>
+            </div>
+        </div>
+    </div>
 
 @endsection

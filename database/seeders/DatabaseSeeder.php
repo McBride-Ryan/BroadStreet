@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Like;
 use App\Models\User;
 use App\Models\Post;
 
@@ -18,5 +19,6 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()->count(13)->create();
         Post::factory()->count(13)->create();
+        Like::factory()->count(200)->create();
     }
 }

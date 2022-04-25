@@ -1,41 +1,42 @@
 @extends('layouts.app')
 @section('content')
-    <div class="flex justify-center">
-        <div class="w-11/12 bg-white p-6 rounded-lg">
-            {{-- hero image --}}
-            {{-- Create a component that takes the featured article --}}
-            <div class="flex justify-center">
-                <img class="object-center" src="https://sixerswire.usatoday.com/wp-content/uploads/sites/30/2022/04/Joel-Embiid-78.jpg?w=1000&h=600&crop=1" alt="cover story">
-            </div>
-            <h2 class="flex justify-center text-5xl m-4">Joel Embiid Proves to be the League's MVP</h2>
-            <div class="px-8 bg-slate-600">
-                <p class="px-9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusamus architecto sunt qui quas sequi, numquam facilis, quisquam, ad quam quod eaque! Quas placeat quod sapiente corporis temporibus ipsa sunt.</p>
+    <div class="w-full bg-gray-100 shadow-xl px-2 pt-4 pb-16">
+        <div class="max-w-screen-xl mx-auto flex flex-col overflow-hidden">
+            <img src="https://sixerswire.usatoday.com/wp-content/uploads/sites/30/2022/04/Joel-Embiid-78.jpg?w=1000&h=600&crop=1" alt="">
+        </div>
+        <div class="max-w-screen-xl mx-auto flex flex-col">
+            <div id="services" class="mx-auto px-5 py-5">
+                <h2 class="mb-4 text-center text-primary font-bold text-3xl lg:text-4xl">
+                    Report: Joel Embiid Will Delay Surgery on Thumb Injury Until End of 76ers' Season
+                </h2>
+                <h3 class="lg:px-20 font-semibold text-center text-primary text-lg lg:text-xl">
+                    Philadelphia 76ers center Joel Embiid will wait until the offseason to undergo surgery to repair the torn ligament in his thumb, according to ESPN's Adrian Wojnarowski.
+                </h3>
             </div>
         </div>
+
     </div>
-    {{-- <div class="grid mx-9 my-6">
-        <div class="grid grid-rows-1 grid-flow-col gap-4 justify-center">
-            <div class="bg-red-500">
-                <h2>TITLE OF THE ARTICLE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde similique deleniti ratione perspiciatis accusantium nam dicta officiis voluptatibus molestias.</p>
-            </div>
-            <div class="bg-blue-500">
-                <h2>TITLE OF THE ARTICLE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde similique deleniti ratione perspiciatis accusantium nam dicta officiis voluptatibus molestias.</p>
-            </div>
-            <div class="bg-gray-500">
-                <h2>TITLE OF THE ARTICLE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam unde similique deleniti ratione perspiciatis accusantium nam dicta officiis voluptatibus molestias.</p>
-            </div>
-        </div>
-    </div> --}}
+{{--    <div class="flex justify-center">--}}
+{{--        <div class="w-11/12 bg-white p-6 rounded-lg">--}}
+{{--            --}}{{-- hero image --}}
+{{--            --}}{{-- Create a component that takes the featured article --}}
+{{--            <div class="flex justify-center">--}}
+{{--                <img class="object-center" src="https://sixerswire.usatoday.com/wp-content/uploads/sites/30/2022/04/Joel-Embiid-78.jpg?w=1000&h=600&crop=1" alt="cover story">--}}
+{{--            </div>--}}
+{{--            <h2 class="flex justify-center text-5xl m-4">Joel Embiid Proves to be the League's MVP</h2>--}}
+{{--            <div class="px-8 bg-slate-600">--}}
+{{--                <p class="px-9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum accusamus architecto sunt qui quas sequi, numquam facilis, quisquam, ad quam quod eaque! Quas placeat quod sapiente corporis temporibus ipsa sunt.</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+
     <div class="min-h-screen w-full flex flex-col space-y-6 items-center pb-10">
         <div class="w-full bg-white px-6">
             <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-4 lg:gap-10 my-10">
                 {{-- first article --}}
                 <div wire:id="ZSl0N2HmR7tVwxS1o3MK" class="flex flex-col text-center bg-white rounded-lg shadow-2xl h-full">
                     <div class="flex flex-col rounded-t overflow-hidden relative">
-                        <div class="absolute right-0 mt-6 bg-white shadow-2xl text-primary rounded-tl-2xl rounded-bl-2xl text-sm p-2.5 border-2 border-primary border-r-0 uppercase leading-4 font-bold z-30">
+                        <div class="absolute right-0 mt-6 bg-white shadow-2xl text-primary rounded-tl-2xl rounded-bl-2xl text-sm p-2.5 border-2 border-primary border-r-0 uppercase leading-4 font-bold">
                             Phillies
                         </div>
                         <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign" class="overflow-hidden">
@@ -44,14 +45,14 @@
                     </div>
                     <div class="flex-1 flex flex-col p-4 mb-2 text-left">
                         <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign"><h3 class="text-xl leading-tight font-medium font-body text-cards-resourceLink hover:text-cards-resourceLinkHover transition duration-300">Kyle Schwarber Has Epic Meltdown Over Horrible Strike Zone in Phillies-Brewers Game</h3></a>
-                
+
                         <span class="text-sm mt-4 text-gray-600 leading-5 font-light">
                             Oft-criticized umpire Angel Hernandez was having a bad night calling balls and Philadelphia Phillies designated hitter Kyle Schwarber went on an epic rant and was, of course, ejected.
                         </span>
                     </div>
                     <div class="border-t-2 border-gray-200">
                         <div class="-mt-px flex">
-                            <div class="w-0 flex-1 flex border-gray-200 rounded-br-lg rounded-bl-lg text-white bg-primary  hover:bg-cards-buttonHover focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition-all ease-in-out duration-300 focus:z-10">
+                            <div class="w-0 flex-1 flex border-gray-200 rounded-br-lg rounded-bl-lg text-white bg-primary  hover:bg-cards-buttonHover focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition-all ease-in-out duration-300 ">
                                 <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign" class="relative flex-1 inline-flex items-center py-4 text-sm leading-5 bg-red-700 font-bold  transition-all ease-in-out duration-300 pr-3">
                                     <span class="ml-auto">Read More</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 ml-1">
@@ -65,7 +66,7 @@
                 {{-- second article --}}
                 <div wire:id="ZSl0N2HmR7tVwxS1o3MK" class="flex flex-col text-center bg-white rounded-lg shadow-2xl h-full">
                     <div class="flex flex-col rounded-t overflow-hidden relative">
-                        <div class="absolute right-0 mt-6 bg-white shadow-2xl text-primary rounded-tl-2xl rounded-bl-2xl text-sm p-2.5 border-2 border-primary border-r-0 uppercase leading-4 font-bold z-30">
+                        <div class="absolute right-0 mt-6 bg-white shadow-2xl text-primary rounded-tl-2xl rounded-bl-2xl text-sm p-2.5 border-2 border-primary border-r-0 uppercase leading-4 font-bold">
                             Eagles
                         </div>
                         <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign" class="overflow-hidden" :class="{ hidden: hideImages }">
@@ -75,7 +76,7 @@
                     <div class="flex-1 flex flex-col p-4 mb-2 text-left">
                         <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign"><h3 class="text-xl leading-tight font-medium font-body text-cards-resourceLink hover:text-cards-resourceLinkHover transition duration-300">Eagles reportedly hosted Alabama linebacker on pre-draft visit
                         </h3></a>
-                
+
                         <span class="text-sm mt-4 text-gray-600 leading-5 font-light">
                             Philly is indeed doing their homework on some LB prospects.
 
@@ -84,7 +85,7 @@
                     </div>
                     <div class="border-t-2 border-gray-200">
                         <div class="-mt-px flex">
-                            <div class="w-0 flex-1 flex border-gray-200 rounded-br-lg rounded-bl-lg text-white bg-primary  hover:bg-cards-buttonHover focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition-all ease-in-out duration-300 focus:z-10">
+                            <div class="w-0 flex-1 flex border-gray-200 rounded-br-lg rounded-bl-lg text-white bg-primary  hover:bg-cards-buttonHover focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition-all ease-in-out duration-300">
                                 <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign" class="relative flex-1 inline-flex items-center py-4 text-sm leading-5 bg-green-700 font-bold  transition-all ease-in-out duration-300 pr-3">
                                     <span class="ml-auto">Read More</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 ml-1">
@@ -100,7 +101,7 @@
 
                 <div wire:id="ZSl0N2HmR7tVwxS1o3MK" class="flex flex-col text-center bg-white rounded-lg shadow-2xl h-full">
                     <div class="flex flex-col rounded-t overflow-hidden relative">
-                        <div class="absolute right-0 mt-6 bg-white shadow-2xl text-primary rounded-tl-2xl rounded-bl-2xl text-sm p-2.5 border-2 border-primary border-r-0 uppercase leading-4 font-bold z-30">
+                        <div class="absolute right-0 mt-6 bg-white shadow-2xl text-primary rounded-tl-2xl rounded-bl-2xl text-sm p-2.5 border-2 border-primary border-r-0 uppercase leading-4 font-bold">
                             Sixers
                         </div>
                         <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign" class="overflow-hidden" :class="{ hidden: hideImages }">
@@ -109,14 +110,14 @@
                     </div>
                     <div class="flex-1 flex flex-col p-4 mb-2 text-left">
                         <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign"><h3 class="text-xl leading-tight font-medium font-body text-cards-resourceLink hover:text-cards-resourceLinkHover transition duration-300">Instant observations: Sixers lay an egg in Game 4 loss to Raptors</h3></a>
-                
+
                         <span class="text-sm mt-4 text-gray-600 leading-5 font-light">
-                            The Sixers collectively failed to show up in a Game 4 loss to Toronto, with the Raptors keeping the series alive in a 110-102 loss for Philadelphia. 
+                            The Sixers collectively failed to show up in a Game 4 loss to Toronto, with the Raptors keeping the series alive in a 110-102 loss for Philadelphia.
                         </span>
                     </div>
                     <div class="border-t-2 border-gray-200">
                         <div class="-mt-px flex">
-                            <div class="w-0 flex-1 flex border-gray-200 rounded-br-lg rounded-bl-lg text-white bg-primary  hover:bg-cards-buttonHover focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition-all ease-in-out duration-300 focus:z-10">
+                            <div class="w-0 flex-1 flex border-gray-200 rounded-br-lg rounded-bl-lg text-white bg-primary  hover:bg-cards-buttonHover focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition-all ease-in-out duration-300">
                                 <a href="https://leadmarvels.com/resource/leadmarvels-how-to-boost-your-lead-gen-roi-the-3-principles-of-a-successful-lead-nurturing-campaign" class="relative flex-1 inline-flex items-center py-4 text-sm leading-5 bg-blue-700 font-bold  transition-all ease-in-out duration-300 pr-3">
                                     <span class="ml-auto">Read More</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 ml-1">

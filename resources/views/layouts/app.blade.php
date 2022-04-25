@@ -9,41 +9,54 @@
     <title>Broad Street Media</title>
 </head>
 <body class="bg-gray-200">
-    <nav class="sticky top-0 p-6 bg-red-700 flex justify-between mb-6 mx-16">
-        <ul class="flex items-center text-white">
-            <li class="bg-red-300">
-                <a href="{{route('home')}}" class="bg-red-300 p-3">Logo</a>
-            </li>
+<nav class="bg-red-800 text-white">
+    <ul class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between px-4 py-4">
+        <ul class="flex flex-col md:flex-row items-center">
             <li>
-                <a href="{{route('dashboard')}}" class="p-3">Dashboard</a>
+                <a href="/">
+                    LOGO
+                </a>
             </li>
-            <li>
-                <a href="{{route('posts')}}" class="p-3">Posts</a>
+            <li class="md:ml-16 mt-3 md:mt-0">
+                <a href="{{route('dashboard')}}" class="hover:text-gray-300 hover:underline">DASHBOARD</a>
+            </li>
+            <li class="md:ml-6 mt-3 md:mt-0">
+                <a href="{{route('posts')}}" class="hover:text-gray-300 hover:underline">Discuss</a>
             </li>
         </ul>
-        <ul class="flex items-center">
+        <ul class="flex flex-col md:flex-row items-center sm:mt-3 md:mt-0">
+            <div class="relative mt-3 md:mt-0">
+                <input type="text" class="rounded-full w-64 px-4 py-1 pl-8 focus:outline-none focus:shadow-outline" style="color: #222" placeholder="Search...">
+                <div class="absolute top-0">
+                    <svg class="fill-current w-4 text-gray-500 mt-2 ml-2" viewBox="0 0 24 24"><path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 01-1.42 1.4l-5.38-5.38a8 8 0 111.41-1.41zM10 16a6 6 0 100-12 6 6 0 000 12z"/></svg>
+                </div>
+            </div>
             @auth
-                <li>
-                    <a href="" class="p-3">{{auth()->user()->username}}</a>
+                <div class="md:ml-4 mt-3 md:mt-0">
+                    <a href="#">
+                        <img src="/images/avatar.jpg" alt="avatar" class="hover:opacity-75 transition ease-in-out duration-150 rounded-full w-8 h-8">
+                    </a>
+                </div>
+                <li class="md:ml-6 mt-3 md:mt-0 hover:text-gray-300 hover:underline">
+                    <a href="/">{{auth()->user()->username}}</a>
                 </li>
-                <li>
-                    <form action="{{ route('logout') }}" method="post" class="inline">
+                <li class="md:ml-6 mt-3 md:mt-0 hover:text-gray-300 hover:underline">
+                    <form action="{{route('logout')}}" method="post">
                         @csrf
-                        <button type="submit ">Logout</button>
-
+                        <button href="{{route('logout')}}" type="submit">Logout</button>
                     </form>
                 </li>
             @endauth
             @guest
-                <li>
-                    <a href="{{route('login')}}" class="p-3 text-white">Login</a>
+                <li class="md:ml-6 mt-3 md:mt-0 hover:text-gray-300 hover:underline">
+                    <a href="{{route('login')}}">Login</a>
                 </li>
-                <li>
-                    <a href="{{route('register')}}" class="py-3 text-white">Register</a>
+                <li class="md:ml-6 mt-3 md:mt-0 hover:text-gray-300 hover:underline">
+                    <a href="{{route('register')}}">Register</a>
                 </li>
-            @endguest
+            @endauth
         </ul>
-    </nav>
+</nav>
     @yield('content')
 </body>
 </html>

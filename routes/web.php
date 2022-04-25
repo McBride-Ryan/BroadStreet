@@ -9,7 +9,7 @@ use App\Http\Controllers\PostsController;
 use App\Http\Controllers\UserPostController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function (){
+Route::get('/', function () {
     return view('home');
 })->name('home');
 
@@ -32,4 +32,3 @@ Route::delete('/posts/{post}', [PostsController::class, 'destroy'])->name('posts
 
 Route::post('/posts/{post}/likes', [PostLikeController::class, 'store'])->name('posts.likes');
 Route::delete('/posts/{post}/likes', [PostLikeController::class, 'destroy'])->name('posts.likes');
-
